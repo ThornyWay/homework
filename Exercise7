@@ -1,0 +1,19 @@
+#
+# Exercise 7
+#
+
+money = int(input('Please enter the amout of money (in whole pounds) you would like to be devided into notes: '))
+no20 = money // 20
+print('You will have: {0} twenty pound notes'.format(no20))
+money = money % 20
+no10 = money // 10
+print('You will have: {0} ten pound notes'.format(no10))
+money = money % 10
+no5 = money // 5
+print('You will have: {0} five pound notes'.format(no5))
+money = money % 5
+no2 = money // 2
+print('You will have: {0} two pound coins'.format(no2))
+money = money % 2
+no1 = money // 1
+print('You will have: {0} one pound coins'.format(no1))
